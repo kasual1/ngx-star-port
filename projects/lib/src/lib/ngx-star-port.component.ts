@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-ngx-star-port',
+  selector: 'ngx-star-port',
   template: `
     <p>
       ngx-star-port works!

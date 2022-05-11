@@ -1,0 +1,19 @@
+{
+  "name": "ngx-star-port",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "author": {
+    "email": "npm.kasual1@gmail.com",
+    "name": "Lukas Seifert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kasual1/ngx-star-port"
+  }
+}
