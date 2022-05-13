@@ -5,9 +5,17 @@
   "projects": {
     "lib": {
       "projectType": "library",
-      "root": "projects/ngx-star-port",
+      "root": "projects/lib",
       "sourceRoot": "projects/lib/src",
       "prefix": "ngx",
+      "schematics": {
+        "@schematics/angular:component": {
+          "inlineTemplate": true,
+          "inlineStyle": true,
+          "skipTests": true,
+          "flat": true
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

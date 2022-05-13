@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
-import { NgxStarPortComponent } from './ngx-star-port.component';
-
-
+import { StarPortComponent } from './components/star-port.component';
+import { StarPortCarrierComponent } from './components/star-port-carrier.component';
+import {PortalModule} from '@angular/cdk/portal';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    NgxStarPortComponent
+    StarPortComponent,
+    StarPortCarrierComponent,
   ],
   imports: [
+    CommonModule,
+    PortalModule
   ],
   exports: [
-    NgxStarPortComponent
+    StarPortComponent,
+    StarPortCarrierComponent
   ]
 })
 export class NgxStarPortModule { }

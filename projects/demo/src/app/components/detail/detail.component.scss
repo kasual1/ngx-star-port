@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.detail{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+app-star-ship {
+  font-size: 1.3rem;
+  border-radius: 50%;
+  padding: 14px 8px;
+  width: 200px;
+  height: 200px;
+}

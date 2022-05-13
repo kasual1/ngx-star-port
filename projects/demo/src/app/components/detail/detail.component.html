@@ -1,0 +1,10 @@
+<div class="detail">
+    <ngx-star-port [id]="'star-ship-' + (id$ | async)">
+        <app-star-ship [routerLink]="['/master']" [starShip]="starShip$ | async"></app-star-ship>
+    </ngx-star-port>
+    
+    <div>
+        <h1>{{(starShip$ | async)?.name}}</h1>
+        <p>{{(starShip$ | async)?.description}}</p>
+    </div>
+</div>

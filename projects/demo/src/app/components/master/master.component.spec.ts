@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxStarPortComponent } from './ngx-star-port.component';
+import { MasterComponent } from './master.component';
 
-describe('NgxStarPortComponent', () => {
-  let component: NgxStarPortComponent;
-  let fixture: ComponentFixture<NgxStarPortComponent>;
+describe('MasterComponent', () => {
+  let component: MasterComponent;
+  let fixture: ComponentFixture<MasterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxStarPortComponent ]
+      declarations: [ MasterComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxStarPortComponent);
+    fixture = TestBed.createComponent(MasterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
