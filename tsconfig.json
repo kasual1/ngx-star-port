@@ -19,6 +19,12 @@
       "ngx-star-port": [
         "dist/lib/ngx-star-port",
         "dist/lib"
+      ],
+      "@angular/cdk/portal": [
+        "projects/lib/node_modules/@angular/cdk/portal"
+      ],
+      "gsap": [
+        "projects/lib/node_modules/gsap"
       ]
     },
     "importHelpers": true,
