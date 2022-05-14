@@ -46,6 +46,8 @@ export class StarPortComponent implements AfterViewInit, OnDestroy {
     let contentElement: HTMLElement = this.content?.elementRef.nativeElement.previousElementSibling;
     let starPortCarrierElement: HTMLElement;
 
+    console.log(this.content);
+    
     if (content) {
       this.portal = new TemplatePortal(content, this.viewContainerRef);
       this.outlet = new DomPortalOutlet(document.querySelector(this.portalOutletSelector)!);
