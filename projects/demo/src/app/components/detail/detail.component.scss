@@ -10,9 +10,8 @@
 .detail{
     width: 500px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 
@@ -20,6 +19,10 @@ app-star-ship {
   font-size: 1.3rem;
   border-radius: 50%;
   padding: 14px 8px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+}
+
+.description{
+    text-align: center;
 }
