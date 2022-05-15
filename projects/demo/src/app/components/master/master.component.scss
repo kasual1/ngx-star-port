@@ -1,18 +1,20 @@
 :host {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.ship-list {
-  display: flex;
-  flex-direction: column;
+.starship-grid {
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 ngx-star-port {
-    display: block;
-    height: 132px;
-  }
+  height: 100px;
+  width: 250px;
+}

@@ -19,7 +19,7 @@ export class StarShipComponent implements OnInit {
 
   ngOnInit(): void {
     this.background = this.sanitizer.bypassSecurityTrustStyle(
-      `url("${this.starShip?.imageUrl}") left center / cover no-repeat`
+      `url("${this.starShip?.imageUrl}") center center / cover no-repeat`
     );
   }
 
