@@ -46,50 +46,28 @@ export class AppModule { }
 
 ```html
 <!--app.component.html-->
+
 <router-outlet></router-outlet>
 
 <ngx-star-port-carrier></ngx-star-port-carrier>
 ```
 
-In routes, wrap the component with the `<Starport>` component.
+3. Wrap components that should be transitioned between route changes inside the `<ngx-star-port>` component and set a unique id. The id helps `<ngx-star-port>` to identify the origin and the destination of the transitioned component.
 
 ```html
-<!-- PageA.vue -->
-<script setup>
-import { Starport } from 'vue-starport'
-</script>
-
-<template>
-  <div>
-    <!-- ... -->
-    <Starport port="my-id" style="height:400px"> 
-      <MyComponent :prop="value"/>
-    </Starport>
-  </div>
-</template>
+<!-- page-a.component.html -->
+<ngx-star-port id="my-id">
+    <my-component></my-component>
+</ngx-star-port>
 ```
-
-On the other page, we do the same thing with **the same `port` id** to identify the instance.
+Make sure to use the same id when wrapping the destionation component
 
 ```html
-<!-- PageB.vue -->
-<script setup>
-import { Starport } from 'vue-starport'
-</script>
-
-<template>
-  <div>
-    <!-- ... -->
-    <Starport port="my-id" style="height:600px">
-      <MyComponent :prop="value"/>
-    </Starport>
-  </div>
-</template>
+<!-- page-b.component.html -->
+<ngx-star-port id="my-id">
+    <my-component></my-component>
+</ngx-star-port>
 ```
-
-> Note that you might need to apply some styles to `<Starport>` to make it have a defined size indicating the area for the "floating starcraft" to land.
-
-Checkout the [Playground](./playground/) for more examples.
 
 
 
