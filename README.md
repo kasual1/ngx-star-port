@@ -1,27 +1,20 @@
-# NgxStarPort
+<br>
+<br>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+<h3 align="center">ngx-star-port</h3>
 
-## Development server
+<p align="center">
+Shared Angular components across routes with animations
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<p align="center"><a href="https://www.npmjs.com/package/ngx-star-port"><img src="https://img.shields.io/npm/v/ngx-star-port?color=2c7dd1&amp;label=" alt="NPM version"></a></p>
 
-## Code scaffolding
+<p align="center"><a href="https://kasual1.github.io/ngx-star-port/master">Live Demo</a></p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<br>
+<br>
 
-## Build
+## About
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ngx-star-port enables you to seamlessly transition shape and position of a component from one route to the other.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
