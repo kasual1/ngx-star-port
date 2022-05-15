@@ -1,10 +1,16 @@
-<div class="starship-grid">
-    <ng-container *ngFor="let starShip of starShips;">
-        <ngx-star-port [id]="'star-ship-' + starShip.id">
-            <app-star-ship
-                [routerLink]="['/detail', starShip.id]"
-                [starShip]="starShip"
-            ></app-star-ship>
-        </ngx-star-port>
-    </ng-container>
+<div class="master-container">
+    <div class="master-heading">
+        <h1>ngx-star-port</h1>
+    </div>
+
+    <div class="master-grid">
+        <ng-container *ngFor="let starShip of starShips;">
+            <ngx-star-port [id]="'star-ship-' + starShip.id">
+                <app-star-ship
+                    [routerLink]="['/detail', starShip.id]"
+                    [starShip]="starShip"
+                ></app-star-ship>
+            </ngx-star-port>
+        </ng-container>
+    </div>
 </div>

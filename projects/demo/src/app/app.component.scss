@@ -1,0 +1,15 @@
+:host {
+    height: calc(100vh - 64px);
+    width: 100%;
+    display: block;
+}
+
+mat-toolbar{
+    &.mat-toolbar{
+        background-color: transparent;
+    }
+
+    &.mat-toolbar-single-row{
+        justify-content: flex-end;
+    }
+}

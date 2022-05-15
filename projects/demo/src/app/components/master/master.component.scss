@@ -1,12 +1,21 @@
 :host {
   height: 100%;
   width: 100%;
+  display: block;
+}
+
+.master-container{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.starship-grid{
+.master-heading{
+  margin: 48px 0;
+}
+
+.master-grid{
   width: 100%;
   height: 100%;
   max-width: 800px;
@@ -28,7 +37,7 @@ ngx-star-port {
 }
 
 @media only screen and (min-width : 790px) {
-  .starship-grid{
+  .master-grid{
     max-height: 350px;
   }
 }

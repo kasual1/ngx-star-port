@@ -8,6 +8,12 @@ import { DetailComponent } from './components/detail/detail.component';
 import { MasterComponent } from './components/master/master.component';
 import { StarShipComponent } from './components/star-ship/star-ship.component';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +24,11 @@ import { StarShipComponent } from './components/star-ship/star-ship.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxStarPortModule
+    HttpClientModule,
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    NgxStarPortModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
