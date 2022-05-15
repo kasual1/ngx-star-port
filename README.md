@@ -56,6 +56,7 @@ export class AppModule { }
 
 ```html
 <!-- page-a.component.html -->
+
 <ngx-star-port id="my-id">
     <my-component></my-component>
 </ngx-star-port>
@@ -64,6 +65,7 @@ Make sure to use the same id when wrapping the destionation component
 
 ```html
 <!-- page-b.component.html -->
+
 <ngx-star-port id="my-id">
     <my-component></my-component>
 </ngx-star-port>
