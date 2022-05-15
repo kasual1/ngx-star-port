@@ -14,7 +14,87 @@ Shared Angular components across routes with animations
 <br>
 <br>
 
-## About
+## Introduction
 
-Ngx-star-port enables you to seamlessly transition shape and position of a component from one route to the other.
+Ngx-star-port enables you to seamlessly transition shape and position of a component from one route to the other. While this might be a common task in native apps, the architectural design of frontend frameworks such as Angular makes this more difficult to achieve. The main concept of this library is inspired by <a href="https://github.com/antfu/vue-starport">VueStarport</a>.
+
+## Install
+
+```
+npm i ngx-star-port
+```
+
+## Usage
+
+1. Add `NgxStarPortModule` to your imports in your app.module.ts
+
+```typescript
+import { NgxStarPortModule } from 'ngx-star-port';
+
+@NgModule({
+  declarations: [],
+  imports: [
+    NgxStarPortModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+Add `<StarportCarrier>` component from `vue-starport` to your root component (`app.vue`). All `<Startport>` usage should be inside `<StarportCarrier>` component.
+
+```html
+<script setup>
+import { StarportCarrier } from 'vue-starport'
+</script>
+
+<template>
+  <StarportCarrier> <!-- here -->
+    <RouterView />
+  </StarportCarrier>
+</template>
+```
+
+In routes, wrap the component with the `<Starport>` component.
+
+```html
+<!-- PageA.vue -->
+<script setup>
+import { Starport } from 'vue-starport'
+</script>
+
+<template>
+  <div>
+    <!-- ... -->
+    <Starport port="my-id" style="height:400px"> 
+      <MyComponent :prop="value"/>
+    </Starport>
+  </div>
+</template>
+```
+
+On the other page, we do the same thing with **the same `port` id** to identify the instance.
+
+```html
+<!-- PageB.vue -->
+<script setup>
+import { Starport } from 'vue-starport'
+</script>
+
+<template>
+  <div>
+    <!-- ... -->
+    <Starport port="my-id" style="height:600px">
+      <MyComponent :prop="value"/>
+    </Starport>
+  </div>
+</template>
+```
+
+> Note that you might need to apply some styles to `<Starport>` to make it have a defined size indicating the area for the "floating starcraft" to land.
+
+Checkout the [Playground](./playground/) for more examples.
+
+
 
