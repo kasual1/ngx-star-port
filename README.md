@@ -42,18 +42,13 @@ import { NgxStarPortModule } from 'ngx-star-port';
 export class AppModule { }
 ```
 
-Add `<StarportCarrier>` component from `vue-starport` to your root component (`app.vue`). All `<Startport>` usage should be inside `<StarportCarrier>` component.
+2. Add the `<ngx-star-port-carrier>` component to the bottom of your `app.component.html`. The `<ngx-star-port-carrier>` component is a layer in which the animations between route changes are beeing performed in.
 
 ```html
-<script setup>
-import { StarportCarrier } from 'vue-starport'
-</script>
+<!--app.component.html-->
+<router-outlet></router-outlet>
 
-<template>
-  <StarportCarrier> <!-- here -->
-    <RouterView />
-  </StarportCarrier>
-</template>
+<ngx-star-port-carrier></ngx-star-port-carrier>
 ```
 
 In routes, wrap the component with the `<Starport>` component.
