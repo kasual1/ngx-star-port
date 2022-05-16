@@ -46,9 +46,7 @@ export class AppModule { }
 
 ```html
 <!--app.component.html-->
-
 <router-outlet></router-outlet>
-
 <ngx-star-port-carrier></ngx-star-port-carrier>
 ```
 
