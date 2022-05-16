@@ -1,7 +1,7 @@
 <br>
 <br>
 <p align="center">
-<img height="200" src="./projects/demo/assets/ngx-star-port-logo.png" alt="Ngx Starport">
+<img height="200" src="./projects/demo/src/assets/ngx-star-port-logo.png" alt="Ngx Starport">
 </p>
 
 <h3 align="center">ngx-star-port</h3>
