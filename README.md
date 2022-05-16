@@ -1,7 +1,7 @@
 <br>
 <br>
 <p align="center">
-<img height="200" src="./projects/demo/src/assets/ngx-star-port-logo.png" alt="Ngx Starport">
+<img height="200" src="https://github.com/kasual1/ngx-star-port/blob/1910149c1f0c021181f579091ef48d20c6567f03/projects/demo/src/assets/ngx-star-port-logo.png" alt="Ngx Starport">
 </p>
 
 <h3 align="center">ngx-star-port</h3>
