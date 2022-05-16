@@ -9,8 +9,14 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class AppComponent {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
-    iconRegistry.addSvgIcon(
+    iconRegistry
+    .addSvgIcon(
       'github',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/github.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/github.svg')
+    )
+    .addSvgIcon(
+      'twitter',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/twitter.svg')
+    );
   }
 }
