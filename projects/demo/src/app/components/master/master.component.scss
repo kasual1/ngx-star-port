@@ -12,7 +12,7 @@
 }
 
 .master-heading{
-  margin: 48px 0;
+  margin-bottom: 48px;
 }
 
 .master-grid{
@@ -37,7 +37,14 @@ ngx-star-port {
 }
 
 @media only screen and (min-width : 790px) {
+
+  .master-container{
+    height: 100%;
+  }
+
+
   .master-grid{
     max-height: 350px;
   }
+  
 }
